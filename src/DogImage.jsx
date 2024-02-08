@@ -1,7 +1,17 @@
 // @ts-check
 
-export const DogImage = () => {
-  return <></>
-}
+/**
+ * @typedef {Object} Props
+ * @property {string} imageUrl
+ */
 
-export default DogImage
+/**
+ * 犬の画像を表示するコンポーネント
+ * @param {Props} props 
+ * @returns 
+ */
+export const DogImage = (props) => {
+    return (
+        <img src={props.imageUrl} alt="犬の画像" />
+    );
+}
